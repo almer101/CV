@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Ivan Almer
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ivan Almer} \\ \vspace{1pt}
+    \small +385 98 774 053 $|$ \href{mailto:ivan.almer@gmail.com}{\underline{ivan.almer@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ivan-almer/}{\underline{linkedin/in/ivan-almer}} $|$
+    \href{https://github.com/almer101}{\underline{github.com/almer101}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Università Bocconi}{Milan, Italy}
+      {Master of Quantitative Finance and Risk Management}{Sep 2023 -- present}
+    \resumeSubheading
+      {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
+      {Master of Computer Science}{Sep 2019 -- Jul 2022}
+    \resumeSubheading 
+      {The Polytechnic University of Catalonia, Barcelona School of Informatics}{Barcelona, Spain}
+      {Master of Innovation and Research}{Sep 2020 -- Jan 2021}
+    \resumeSubheading 
+      {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
+      {Bachelor of Computer Science}{Sep 2016 -- Jul 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {European Central Bank (ECB) - Market Operation Analysis}{Frankfurt am Main, Germany}
+      {Market Operations Analyst}{Oct 2022 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Conducted precise and complex analyses related to Targeted longer-term refinancing operations (TLTROs)}
+        \resumeItem{Ensured timely delivery of multiple policy-relevant dossiers by automating the analyses using Python and SQL}
+        \resumeItem{Created a dashboard that enabled complete monitoring of TLTRO III time-dependent applicable interest rates}
+      \resumeItemListEnd
+
+   \resumeSubSubheading
+    {Trainee}{Dec 2021 - Oct 2022}
+    \resumeItemListStart
+       \resumeItem{Developed a script for TLTRO applicable interest rate calculation, which immensely sped up the existing process while also improving reliability}
+       \resumeItem{Maintaining and improving internal market operations database}
+       \resumeItem{Automating procedures and speeding up existing workflows}
+    \resumeItemListEnd
+
+   \resumeSubheading
+      {Agency04 - Mobile Development Team}{Zagreb, Croatia}
+      {Junior iOS Developer}{Jul 2018 -- Feb 2021}
+      \resumeItemListStart
+        \resumeItem{Ensured a delivery of a major project on a tight deadline while maintaining both code and application quality}
+        \resumeItem{Contributed to multiple iOS applications}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd 
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Option Pricing and Hedging under Jump-diffusion model} $|$ \emph{Financial Mathematics}}{Feb 2022 - Jun 2022}
+          \resumeItemListStart
+            \resumeItem{Master thesis at the Faculty of Electrical Engineering and Computing}
+            \resumeItem{Used Jump-diffusion process to model the price of the underlying asset}
+            \resumeItem{Derived a function to price a European call option written on the underlying}
+            \resumeItem{Mathematically showed that simulations can be used to price an option}
+            \resumeItem{Examined the effects of the quadratic- and delta hedge to hedge the open position in an option}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{The Crane Problem} $|$ \emph{Trigonometry, Calculus, Python}}{Jun 2021}
+          \resumeItemListStart
+            \resumeItem{Invented a problem to find a function of time that describes how to move the load along the arm of the crane such that it covers the shortest distance between the two arbitrary points}
+            \resumeItem{Used Trigonometry and Calculus to develop a solution}
+            \resumeItem{Used Python to test it and visualise it}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Tools}{: Microsoft Office, Git, Tableau, LaTeX, Visual Studio} \\
+     \textbf{Languages}{: Python, SQL, R, Java, C/C++} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
