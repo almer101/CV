@@ -72,14 +72,23 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \small #4 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingWithAdditional}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small #3 & \small #4 \\
+      \small #5
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \small #2 \\
+      \small#1 & \small #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -112,11 +121,14 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Ivan Almer} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Ivan Almer} \\ \vspace{2pt}
+    Place and date of birth: Zagreb (Croatia), June 23rd, 1997; Citizenship: Croatian \\ \vspace{2pt}
     \small +385 98 774 053 $|$ \href{mailto:ivan.almer@gmail.com}{\underline{ivan.almer@gmail.com}} $|$ 
     \href{https://linkedin.com/in/ivan-almer/}{\underline{linkedin/in/ivan-almer}} $|$
     \href{https://github.com/almer101}{\underline{github.com/almer101}}
+    
 \end{center}
+
 
 
 %-----------EDUCATION-----------
@@ -124,16 +136,19 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Bocconi University}{Milan, Italy}
-      {Master of Quantitative Finance and Risk Management}{Sep 2023 -- present}
-    \resumeSubheading
+      {Master of Quantitative Finance and Risk Management; expected graduation date October 2024}{Sep 2023 -- present}
+    \resumeSubheadingWithAdditional
       {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
-      {Master of Computer Science}{Sep 2019 -- Jul 2022}
+      {Master of Computer Science (GPA 4.4/5)}{Sep 2019 -- Jul 2022}{Thesis: Option Pricing and Hedging under Jump-diffusion model}
     \resumeSubheading 
       {The Polytechnic University of Catalonia, Barcelona School of Informatics}{Barcelona, Spain}
-      {Master of Innovation and Research (exchange semester)}{Sep 2020 -- Jan 2021}
-    \resumeSubheading 
+      {Master of Innovation and Research (exchange student)}{Sep 2020 -- Jan 2021}
+    \resumeSubheadingWithAdditional 
       {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
-      {Bachelor of Computer Science}{Sep 2016 -- Jul 2019}
+      {Bachelor of Computer Science (GPA 4.5/5)}{Sep 2016 -- Jul 2019}{Thesis: Medical Image Classification With Convolutional Models}
+    % \resumeSubheading 
+    %   {XV. Gimnazija (MIOC), Natural Sciences and Mathematics}{Zagreb, Croatia}
+    %   {4-year high school diploma, major topics: Mathematics, Physics and English, Final mark: }{Sep 2012 -- Jun 2016}
   \resumeSubHeadingListEnd
 
 
@@ -160,7 +175,7 @@
     \resumeItemListEnd
 
    \resumeSubheading
-      {Agency04 - Mobile Development Team}{Zagreb, Croatia}
+      {Notch (former Agency04) - Mobile Development Team}{Zagreb, Croatia}
       {Junior iOS Developer}{Jul 2018 -- Feb 2021}
       \resumeItemListStart
         \resumeItem{Ensured the delivery of a major project on a tight deadline while maintaining both code and application quality}
@@ -178,42 +193,79 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-
 %-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Option Pricing and Hedging under Jump-diffusion model} $|$ \emph{Financial Mathematics}}{Feb 2022 - Jun 2022}
-          \resumeItemListStart
-            \resumeItem{Master thesis at the Faculty of Electrical Engineering and Computing}
-            \resumeItem{Used Jump-diffusion process to model the price of the underlying asset}
-            \resumeItem{Derived a function to price a European call option written on the underlying}
-            \resumeItem{Mathematically showed that simulations can be used to price an option}
-            \resumeItem{Examined the effects of the quadratic- and delta hedge to hedge the open position in an option}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{The Crane Problem} $|$ \emph{Trigonometry, Calculus, Python}}{Jun 2021}
-          \resumeItemListStart
-            \resumeItem{Invented a problem to find a function of time that describes how to move the load along the arm of the crane such that it covers the shortest distance between the two arbitrary points}
-            \resumeItem{Used Trigonometry and Calculus to develop a solution}
-            \resumeItem{Used Python to test it and visualize it}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Option Pricing and Hedging under Jump-diffusion model} $|$ \emph{Financial Mathematics}}{Feb 2022 - Jun 2022}
+%           \resumeItemListStart
+%             \resumeItem{Master thesis at the Faculty of Electrical Engineering and Computing in Zagreb}
+%             \resumeItem{Derived a function to price a European call option written on the underlying asset whose price is governed by a Jump-diffusion process}
+%             \resumeItem{Examined the effects of the quadratic and delta hedge to hedge the open position in an option}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{The Crane Problem} $|$ \emph{Trigonometry, Calculus, Python}}{Jun 2021}
+%           \resumeItemListStart
+%             \resumeItem{Invented a problem to find a function of time that describes how to move the load along the arm of the crane such that it covers the shortest distance between the two arbitrary points}
+%             \resumeItem{Used Trigonometry and Calculus to develop a solution and Python to test it and visualize it}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
 
 
 %
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Tools}{: Microsoft Office, Git, Tableau, LaTeX, Visual Studio} \\
-     \textbf{Programming Languages}{: Python, SQL, R, Java, C/C++} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib} \\
-     \textbf{Languages}{: Croatian, English, German, Spanish}
-     % \textbf{Interests}{: Running, Traveling, Mathematics, Philosophy}
+%----------- SKILLS-----------
+\section{Language and Skills}
+\begin{center}
+\begin{tabularx}{0.96\textwidth} { 
+   >{\centering\arraybackslash}X 
+   >{\centering\arraybackslash}X 
+   >{\centering\arraybackslash}X 
+   >{\centering\arraybackslash}X }
+ \textbf{Croatian} & \textbf{English} & \textbf{German} & \textbf{Spanish} \\
+ \hline\hline
+ Native  & 8/9 IELTS, Feb 2023  & B2 Goethe, Jun 2015 & Good  \\
+\hline
+\end{tabularx}
+\end{center}
+
+
+\begin{center}
+\begin{tabularx}{0.96\textwidth} { 
+  >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X
+}
+\small{\textbf{Professional proficiency}: Python, Excel, SQL, Git} & \small{\hspace{3pt}\textbf{Programming Languages}: Python, R, Java, C/C++} \\
+\small{\textbf{Intermediate proficiency}: Tableau, Powerpoint, Word} & \small{\hspace{3pt}\textbf{Bloomberg Terminal}: Basic knowledge} \\
+\end{tabularx}
+\end{center}
+
+ % \begin{itemize}[leftmargin=0.15in, label={}]
+ %    \small{\item{
+ %     \textbf{Professional proficiency}{: Python, Excel, SQL, Git} \\
+ %     \textbf{Intermediate proficiency}{: Tableau, Powerpoint, Word} \\
+ %     \textbf{Programming Languages}{: Python, R, Java, C/C++} \\
+ %     \textbf{Bloomberg Terminal}{: Basic knowledge}
+ %     % \textbf{Interests}{: Running, Traveling, Mathematics, Philosophy}
+ %    }}
+ % \end{itemize}
+
+%----------- Additional info -------------
+
+\section{Additional Information}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+     Awareded the \textit{"STEM Stipend"} for excellent students (2018 -- 2019) \\
+     Awarded the \textit{"City of Zagreb Stipend"} for excellent students (2014 -- 2018) \\ \vspace{3pt}
+     \textbf{Sports}: Running, Former Ice-hockey player (2001 -- 2016) \\
+     \textbf{Interests}: Mathematics, Travel, Dogs
     }}
- \end{itemize}
+\end{itemize}
+
+\mbox{}
+\vfill
+I authorize the use of my personal data according to local law.
 
 
 %-------------------------------------------
