@@ -76,7 +76,17 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubheadingWithAdditional}[5]{
+\newcommand{\resumeSubheadingWithAdditional}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small #3 & \small #4 \\
+      \small #5 \\
+      \small #6
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingWithAdditionall}[5]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -122,7 +132,6 @@
 
 \begin{center}
     \textbf{\Huge \scshape Ivan Almer} \\ \vspace{2pt}
-    Place and date of birth: Zagreb (Croatia), June 23rd, 1997; Citizenship: Croatian \\ \vspace{2pt}
     \small +385 98 774 053 $|$ \href{mailto:ivan.almer@gmail.com}{\underline{ivan.almer@gmail.com}} $|$ 
     \href{https://linkedin.com/in/ivan-almer/}{\underline{linkedin/in/ivan-almer}} $|$
     \href{https://github.com/almer101}{\underline{github.com/almer101}}
@@ -136,14 +145,15 @@
   \resumeSubHeadingListStart
     \resumeSubheadingWithAdditional
       {Bocconi University}{Milan, Italy}
-      {Master of Quantitative Finance and Risk Management}{Sep 2023 -- present}{Expected graduation in October 2024}
+      {Master of Quantitative Finance and Risk Management}{Sep 2023 -- present}{Expected graduation in September 2024}{Relevant Courses: Fixed Income, Derivatives, Probability and Stochastic Calculus, Econometrics}
     \resumeSubheadingWithAdditional
       {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
       {Master of Computer Science (GPA 4.4/5)}{Sep 2019 -- Jul 2022}{Thesis: Option Pricing and Hedging under Jump-diffusion model}
+      {Relevant Courses: Financial Mathematics, Machine Learning, Numerical Optimization Methods}
     \resumeSubheading 
       {The Polytechnic University of Catalonia, Barcelona School of Informatics}{Barcelona, Spain}
       {Master of Innovation and Research (exchange student)}{Sep 2020 -- Jan 2021}
-    \resumeSubheadingWithAdditional 
+    \resumeSubheadingWithAdditionall
       {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
       {Bachelor of Computer Science (GPA 4.5/5)}{Sep 2016 -- Jul 2019}{Thesis: Medical Image Classification With Convolutional Models}
     % \resumeSubheading 
@@ -160,9 +170,9 @@
       {European Central Bank (ECB) - Market Operation Analysis}{Frankfurt am Main, Germany}
       {Market Operations Analyst}{Oct 2022 -- Jun 2023}
       \resumeItemListStart
-        \resumeItem{Conducted precise and complex analyses related to Targeted longer-term refinancing operations (TLTROs)}
+        \resumeItem{Conducted precise and complex analyses related to the Third Series of Targeted Longer-term Refinancing Operations (TLTRO III), the biggest lending operation in the history of ECB (allotment of over 2 EUR trillions)}
         \resumeItem{Ensured timely delivery of the TLTRO III recalibration dossier (as decided by the Governing Council of the ECB in October 2022) by automating the analyses using Python and SQL}
-        \resumeItem{Contributed to the automation of the process that ensured timely delivery of the Minimum Reserves Remuneration dossier (as decided by the Governing Council of the ECB in July 2023)}
+        \resumeItem{Contributed to the automation of the process that ensured timely delivery of the Minimum Reserves Remuneration dossier (as decided by the Governing Council of the ECB in July 2023), affecting 165 EUR billions of reserves}
         \resumeItem{Created a dashboard that enabled complete monitoring of TLTRO III time-dependent applicable interest rates}
       \resumeItemListEnd
 
@@ -217,17 +227,11 @@
 \section{Language and Skills}
 \begin{center}
 \begin{tabularx}{0.96\textwidth} { 
-   >{\centering\arraybackslash}X 
-   >{\centering\arraybackslash}X 
-   >{\centering\arraybackslash}X 
-   >{\centering\arraybackslash}X }
- \textbf{Croatian} & \textbf{English} & \textbf{German} & \textbf{Spanish} \\
- \hline\hline
- Native  & 8/9 IELTS, Feb 2023  & B2 Goethe, Jun 2015 & Very good  \\
-\hline
+  >{\raggedright\arraybackslash}X
+}
+  \small{\textbf{Languagues}: English (Fluent), Spanish (Very good), German (Conversational), Croatian (Native)}
 \end{tabularx}
 \end{center}
-
 
 \begin{center}
 \begin{tabularx}{0.96\textwidth} { 
@@ -256,10 +260,11 @@
 \section{Additional Information}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
+     Best student of the Financial Mathematics course in MSc Computer Science (2019) \\
      Awarded the \textit{"STEM Stipend"} for excellent students (2018 -- 2019) \\
      Awarded the \textit{"City of Zagreb Stipend"} for excellent students (2014 -- 2018) \\ \vspace{3pt}
-     \textbf{Sports}: Running, Former Ice-hockey player (2001 -- 2016) \\
-     \textbf{Interests}: Mathematics, Travel, Cooking
+     % \textbf{Sports}: Running, Former Ice-hockey player (2001 -- 2016) \\
+     \textbf{Interests}: Mathematics, Puzzles, Travel
     }}
 \end{itemize}
 
