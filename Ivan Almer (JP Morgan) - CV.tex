@@ -43,7 +43,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -74,6 +74,15 @@
       \textbf{#1} & #2 \\
       \small #3 & \small #4 \\
     \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingMultiplePositions}[6]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\small #3 & \small #4 \\
+		\small #5 & \small #6 \\
+	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheadingWithAdditional}[6]{
@@ -143,17 +152,17 @@
   \resumeSubHeadingListStart
     \resumeSubheadingWithAdditional
       {Bocconi University}{Milan, Italy}
-      {Master of Quantitative Finance and Risk Management (GPA 110/110 - expected)}{Sep 2023 -- present}{Expected graduation in September 2024}{Relevant Courses: Fixed Income, Derivatives, Econometrics, Stochastic Calculus, Theory of Valuation}
+      {Master of Quantitative Finance and Risk Management (GPA 110/110 - expected)}{Sep 2023 -- Sep 2024}{\underline{Thesis:} Application of the Heath-Jarrow-Morton Framework to Pricing Interest Rate Derivatives}{\underline{Relevant Courses:} Term Structure Modelling, Stochastic Calculus, Derivatives, Econometrics}
     \resumeSubheadingWithAdditional
       {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
-      {Master of Computer Science (GPA 4.4/5)}{Sep 2019 -- Jul 2022}{Thesis: Option Pricing and Hedging under Jump-diffusion model}
-      {Relevant Courses: Financial Mathematics, Machine Learning, NLP, Numerical Optimization Methods}
+      {Master of Computer Science (GPA 4.4/5)}{Sep 2019 -- Jul 2022}{\underline{Thesis:} Option Pricing and Hedging under Jump-diffusion model}
+      {\underline{Relevant Courses:} Financial Mathematics, Machine Learning, NLP, Numerical Optimization Methods}
     \resumeSubheading 
       {The Polytechnic University of Catalonia, Barcelona School of Informatics}{Barcelona, Spain}
       {Master of Innovation and Research (exchange student)}{Sep 2020 -- Jan 2021}
     \resumeSubheadingWithAdditionall
       {University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}
-      {Bachelor of Computer Science (GPA 4.5/5)}{Sep 2016 -- Jul 2019}{Thesis: Medical Image Classification With Convolutional Models}
+      {Bachelor of Computer Science (GPA 4.5/5)}{Sep 2016 -- Jul 2019}{\underline{Thesis:} Medical Image Classification With Convolutional Models}
     % \resumeSubheading 
     %   {XV. Gimnazija (MIOC), Natural Sciences and Mathematics}{Zagreb, Croatia}
     %   {4-year high school diploma, major topics: Mathematics, Physics and English, Final mark: }{Sep 2012 -- Jun 2016}
@@ -164,9 +173,19 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+	\resumeSubheading
+	{J.P. Morgan}{London, United Kingdom}
+	{Securities Valuation Analyst}{Jun 2024 -- present}
+	\resumeItemListStart
+	\resumeItem{Utilized quantitative models to price securities with varying levels of liquidity, ensuring precise and comprehensive valuations in dynamic market conditions}
+	\resumeItem{Ensured accurate and timely pricing of European corporate bonds and money market instruments across multiple daily snapshots}
+	
+	\resumeItemListEnd
+	
     \resumeSubheading
       {European Central Bank (ECB) - Market Operations Analysis}{Frankfurt am Main, Germany}
       {Market Operations Analyst}{Oct 2022 -- Jun 2023}
+%      {Market Operations Trainee}{Dec 2021 - Sep 2022}
       \resumeItemListStart
         \resumeItem{Conducted precise and complex analyses related to the Third Series of Targeted Longer-term Refinancing Operations (TLTRO III), the biggest lending operation in ECB's history (allotment of over 2 EUR trillions)}
         \resumeItem{Ensured timely delivery of the TLTRO III recalibration dossier (as decided by the Governing Council of the ECB in October 2022) by automating the analyses using Python and SQL}
@@ -178,18 +197,19 @@
     {Market Operations Trainee}{Dec 2021 - Sep 2022}
     \resumeItemListStart
        \resumeItem{Developed a script for the TLTRO III applicable interest rate calculation, which immensely sped up the existing process while also improving reliability}
-       \resumeItem{Made improvements to the internal market operations database, which enabled our teams to handle complicated data extractions and simplified cross-divisional data sharing}
+%       \resumeItem{Made improvements to the internal market operations database, which enabled our teams to handle complicated data extractions and simplified cross-divisional data sharing}\\
+
        \resumeItem{Automating procedures and speeding up existing workflows, which significantly reduced the amount of time needed to conduct existing tasks}
     \resumeItemListEnd
 
-   \resumeSubheading
-      {Notch (former Agency04) - Mobile Development Team}{Zagreb, Croatia}
-      {Junior iOS Developer}{Jul 2018 -- Feb 2021}
-      \resumeItemListStart
-        \resumeItem{Ensured the delivery of a major project on a tight deadline while maintaining both code and application quality}
-        % \resumeItem{Developed an on-device persistence framework that was used application-wide}
-        \resumeItem{Contributed to multiple iOS applications}
-      \resumeItemListEnd
+%   \resumeSubheading
+%      {Notch (former Agency04) - Mobile Development Team}{Zagreb, Croatia}
+%      {Junior iOS Developer}{Jul 2018 -- Feb 2021}
+%      \resumeItemListStart
+%        \resumeItem{Ensured the delivery of a major project on a tight deadline while maintaining both code and application quality}
+%        % \resumeItem{Developed an on-device persistence framework that was used application-wide}
+%        \resumeItem{Contributed to multiple iOS applications}
+%      \resumeItemListEnd
 
   \resumeSubHeadingListEnd 
 % -----------Multiple Positions Heading-----------
@@ -228,7 +248,7 @@
 \begin{tabularx}{0.96\textwidth} { 
   >{\raggedright\arraybackslash}X
 }
-  \small{\textbf{Languagues}: Croatian (Native), English (Fluent), Spanish (Very good), German (Conversational)}
+  \small{\textbf{Languagues}: Croatian (Native), English (Fluent), Spanish (Fluent), German (Conversational)}
 \end{tabularx}
 \end{center}
 
@@ -239,8 +259,8 @@
    >{\raggedright\arraybackslash}X 
    >{\raggedright\arraybackslash}X
 }
-\small{\textbf{Professional proficiency}: Python, Excel, SQL, Git} & \small{\hspace{3pt}\textbf{Programming Languages}: Python, R, Java, C/C++} \\
-\small{\textbf{Intermediate proficiency}: Tableau, Powerpoint, Word} & \small{\hspace{3pt}\textbf{Bloomberg Terminal}: Basic knowledge} \\
+\small{\textbf{Professional proficiency}: Python, Excel, SQL, Git} & \small{\hspace{3pt}\textbf{Programming Languages}: Python, C/C++, R, Java} \\
+\small{\textbf{Intermediate proficiency}: Tableau, Powerpoint, Word} & \small{\hspace{3pt}\textbf{Bloomberg Terminal}: Intermediate knowledge} \\
 \end{tabularx}
 \end{center}
 
