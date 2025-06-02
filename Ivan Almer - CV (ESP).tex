@@ -1,0 +1,282 @@
+%-------------------------
+% Resume in Latex
+% Author : Ivan Almer
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingMultiplePositions}[6]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\small #3 & \small #4 \\
+		\small #5 & \small #6 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingWithAdditional}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small #3 & \small #4 \\
+      \small #5 \\
+      \small #6
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingWithAdditionall}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small #3 & \small #4 \\
+      \small #5
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://almer101.github.io/intro.html}{\Large Ivan Almer}} & Email : \href{mailto:ivan.almer@gmail.com}{ivan.almer@gmail.com}\\
+%    \href{https://almer101.github.io/intro.html}{https://almer101.github.io}& LinkedIn: \href{https://linkedin.com/in/ivan-almer/}{linkedin/in/ivan-almer}
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Large \scshape Ivan Almer} \\ \vspace{2pt}
+    \small +385 98 774 053 $|$ \href{mailto:ivan.almer@gmail.com}{\underline{ivan.almer@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ivan-almer/}{\underline{linkedin/in/ivan-almer}} $|$
+    \href{https://almer101.github.io/intro.html}{Página web personal: \underline{almer101.github.io}}
+\end{center}
+
+\vspace{-17pt}
+%-----------EXPERIENCE-----------
+\section{Experiencia}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+	{J.P. Morgan}{Londres, Reino Unido}
+	{Analista de Valoración de Renta Fija }{jun. 2024 -- presente}
+	\resumeItemListStart
+	\resumeItem{Desarrollé una herramienta para valorar 10 mil activos del mercado monetario de forma rápida y precisa}
+	\resumeItem{Construí y mantuve curvas de diferenciales de bonos corporativos y deuda soberana, integrando datos de mercado para apoyar el análisis de precios y riesgos, utilizando Python, Excel y fuentes como Bloomberg}
+	\resumeItem{Aseguré la valoración precisa y oportuna de bonos europeos y activos del mercado monetario, incluidos instrumentos con indexación a la inflación, opciones de recompra y fondos de amortización}
+	\resumeItem{Conocimientos sobre la construcción de curvas, incluyendo metodologías de bootstrap y técnicas de interpolación como splines cúbicos y el modelo de Nelson-Siegel}
+	\resumeItemListEnd
+	
+    \resumeSubheading
+      {Banco Central Europeo (BCE) - Análisis de Operaciones de Mercado}{Frankfurt am Main, Alemania}
+      {Analista de Operaciones de Mercado}{oct. 2022 -- jun. 2023}
+      \resumeItemListStart
+        \resumeItem{Realicé análisis precisos y complejos relacionados con las Targeted Longer-Term Refinancing Operations (TLTRO III), la mayor operación crediticia en la historia del BCE (asignación de más de 2 billones de euros)}
+        \resumeItem{Aseguré la entrega oportuna del expediente de recalibración de TLTRO III (decisión del Consejo de Gobierno del BCE en octubre de 2022) automatizando los análisis con Python y SQL}
+        \resumeItem{Contribuí a la automatización del proceso que permitió entregar a tiempo el expediente de Remuneración de Reservas Mínimas (decisión del Consejo de Gobierno en julio de 2023), afectando a 165 mil millones de euros en reservas}
+        \resumeItem{Creé un panel de control que permitió el monitoreo de los tipos de interés aplicables al TLTRO III en función del tiempo}
+      \resumeItemListEnd
+
+   \resumeSubSubheading
+    {Becario en Operaciones de Mercado}{dic. 2021 -- sep. 2022}
+    \resumeItemListStart
+       \resumeItem{Desarrollé un programa para el cálculo de los tipos de interés aplicables del TLTRO III, acelerando significativamente el proceso existente y mejorando su fiabilidad}
+      \resumeItem{Mejoré la base de datos interna de operaciones de mercado, permitiendo a nuestros equipos manejar extracciones de datos complejas y facilitar el intercambio de datos entre divisiones}
+      \resumeItem{Automaticé procesos y optimicé flujos de trabajo, reduciendo significativamente los tiempos}
+    \resumeItemListEnd
+
+  \resumeSubheading
+     {Notch (antes Agency04) - Equipo de Desarrollo Móvil}{Zagreb, Croacia}
+     {Desarrollador Junior iOS}{jul. 2018 -- feb. 2021}
+     \resumeItemListStart
+       \resumeItem{Aseguré la entrega de proyectos importantes, manteniendo la calidad del código y de la aplicación}
+       \resumeItem{Desarrollé un sistema de persistencia en dispositivo utilizado en toda la aplicación, aplicando diseño orientado a objetos}
+       \resumeItem{Contribuí al desarrollo de múltiples aplicaciones iOS, generando ideas como mejorar la calidad y implementando soluciónes}
+     \resumeItemListEnd
+
+  \resumeSubHeadingListEnd 
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Option Pricing and Hedging under Jump-diffusion model} $|$ \emph{Financial Mathematics}}{Feb 2022 - Jun 2022}
+%           \resumeItemListStart
+%             \resumeItem{Master thesis at the Faculty of Electrical Engineering and Computing in Zagreb}
+%             \resumeItem{Derived a function to price a European call option written on the underlying asset whose price is governed by a Jump-diffusion process}
+%             \resumeItem{Examined the effects of the quadratic and delta hedge to hedge the open position in an option}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{The Crane Problem} $|$ \emph{Trigonometry, Calculus, Python}}{Jun 2021}
+%           \resumeItemListStart
+%             \resumeItem{Invented a problem to find a function of time that describes how to move the load along the arm of the crane such that it covers the shortest distance between the two arbitrary points}
+%             \resumeItem{Used Trigonometry and Calculus to develop a solution and Python to test it and visualize it}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+% \vspace{-15pt}
+% -----------EDUCATION-----------
+\vspace{-10pt}
+\section{Educación}
+  \resumeSubHeadingListStart
+    \resumeSubheadingWithAdditional
+      {Universidad Bocconi}{Milán, Italia}
+      {Máster en Finanzas Cuantitativas y Gestión de Riesgos (Nota media 110/110 cum laude)}{sep. 2023 -- sep. 2024}{\underline{Tesis:} Application of the Heath-Jarrow-Morton Framework to Pricing Interest Rate Derivatives}{\underline{Cursos relevantes:} Modelado de Curvas de Tipos, Cálculo Estocástico, Derivados Exóticos, Econometría}
+    \resumeSubheadingWithAdditional
+      {Universidad de Zagreb, Facultad de Ingeniería Eléctrica y Computación}{Zagreb, Croacia}
+      {Máster en Computación (Nota media 4.4/5)}{sep. 2019 -- jul. 2022}{\underline{Tesis:} Option Pricing and Hedging under Jump-diffusion model}
+      {\underline{Cursos relevantes:} Matemáticas Financieras, Machine Learning, Métodos Numéricos de Optimización}
+    \resumeSubheading 
+      {Universidad Politécnica de Cataluña, Barcelona School of Informatics}{Barcelona, España}
+      {Máster en Innovación e Investigación (intercambio)}{sep. 2020 -- ene. 2021}
+    \resumeSubheadingWithAdditionall
+      {Universidad de Zagreb, Facultad de Ingeniería Eléctrica y Computación}{Zagreb, Croacia}
+      {Grado en Computación (Nota media 4.5/5)}{sep. 2016 -- jul. 2019}{\underline{Tesis:} Medical Image Classification With Convolutional Models}
+  \resumeSubHeadingListEnd
+
+%
+%----------- SKILLS-----------
+\section{Idiomas y Habilidades}
+\begin{center}
+\begin{tabularx}{0.96\textwidth} { 
+  >{\raggedright\arraybackslash}X
+}
+  \small{\textbf{Idiomas}: Croata (Nativo), Español (Fluido), Inglés (Fluido), Alemán (Conversacional)}\\
+  \small{\textbf{Habilidades}: Modelado financiero, Renta fija, Tipos de interés, Derivados de tipos de interés, Diseño de software}
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.96\textwidth} { 
+  >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X
+}
+\small{\textbf{Nivel profesional}: Python, DOO, SQL, Git, Excel} & \small{\hspace{3pt}\textbf{Lenguajes de programación}: Python, C/C++, R, Java} \\
+\small{\textbf{Nivel intermedio}: C/C++, Tableau} & \small{\hspace{3pt}\textbf{Terminal Bloomberg}: Dominio avanzado} \\
+\end{tabularx}
+\end{center}
+
+%----------- Additional info -------------
+
+\section{Información Adicional}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+  	 Tutor privado para estudiantes de máster (Matemáticas, Matemáticas Financieras, Machine Learning)\\
+     Mejor estudiante en el curso de Matemáticas Financieras durante el máster en Computación (2019) \\
+     Becado con la \textit{"Beca STEM"} para estudiantes destacados (2018 -- 2019) \\
+     Becado con la \textit{"Beca de la Ciudad de Zagreb"} para estudiantes sobresalientes (2014 -- 2018) \\ \vspace{3pt}
+     \textbf{Intereses}: Atletismo, Matemáticas, Rompecabezas
+    }}
+\end{itemize}
+
+% \mbox{}
+% \vfill
+% I authorize the use of my personal data in accordance with local laws.
+
+%-------------------------------------------
+\end{document}
